@@ -15,7 +15,22 @@ public class DoublyLinkedListTest {
 		list.addToFront(johnDoe);
 		list.addToFront(marySmith);
 		list.addToFront(mikeWilson);
+		System.out.println(list.getSize());
 		list.printList();
+		
+		Employee billEnd = new Employee("Bill", "End", 589);
+		list.addToEnd(billEnd);		
+		System.out.println(list.getSize());
+		list.printList();
+		
+		list.removeFromFront();		
+		System.out.println(list.getSize());
+		list.printList();
+		
+		list.removeFromLast();
+		System.out.println(list.getSize());
+		list.printList();
+		
 	}
 
 }

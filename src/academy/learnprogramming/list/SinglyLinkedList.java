@@ -31,7 +31,7 @@ public class SinglyLinkedList {
 	public void printList() {
 		EmployeeNode current = head;
 		System.out.print("Head -> ");
-		while(current.getNext() != null) {
+		while(current != null) {
 			System.out.print(current);
 			System.out.print(" -> ");
 			current=current.getNext();			
